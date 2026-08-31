@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #07111f;
+  --color-navy: #0c1a2e;
+  --color-paper: #f4f1e8;
+  --color-lime: #c8ff4a;
+  --color-court: #2f6bff;
+  --color-clay: #e8a07a;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(47, 107, 255, 0.28), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(200, 255, 74, 0.12), transparent 50%),
+    var(--color-ink);
+  color: var(--color-paper);
+}
+
+#root {
+  isolation: isolate;
+}
+
+.desk-grid {
+  background-image:
+    linear-gradient(rgba(244, 241, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 232, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
